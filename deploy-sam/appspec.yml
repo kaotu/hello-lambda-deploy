@@ -10,5 +10,5 @@ Resources:
 Hooks:
   - BeforeAllowTraffic: "LambdaFunctionToValidateBeforeTrafficShift"
   - ApplicationStart:
-    - location: scripts/sam-deploy.sh
+    - location: sam-deploy.sh
   - AfterAllowTraffic: "LambdaFunctionToValidateAfterTrafficShift"
