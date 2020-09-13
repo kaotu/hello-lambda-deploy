@@ -1,0 +1,9 @@
+version: 0.0
+Resources:
+  - kaotudeploysam:
+      Type: AWS::Lambda::Function
+      Properties:
+        Name: "kaotu-deploy-sam-HelloWorldFunction-1BA6Q424T9UYR"
+        Alias: "test"
+        CurrentVersion: "1"
+        TargetVersion: "2"
