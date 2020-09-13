@@ -13,6 +13,6 @@ phases:
 artifacts:
     files:
         - 'deploy-sam/packaged-template.yml'
-        - 'deploy-sam/appspec.yml'
+        - 'deploy-sam/appspec.yaml'
         - 'deploy-sam/scripts/*'
     discard-paths: yes
