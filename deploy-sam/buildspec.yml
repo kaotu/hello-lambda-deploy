@@ -12,7 +12,11 @@ phases:
       - ls -la
 
 artifacts:
-  files:
-    - 'deploy-sam/appspec.yml'
-    - 'deploy-sam/scripts/*'
-    - 'packaged-template.yml'
+    files:
+        - 'packaged-template.yml'
+    secondary-artifacts:
+        artifact1:
+            files:
+                - 'deploy-sam/appspec.yml'
+                - 'deploy-sam/scripts/*'
+            discard-paths: yes
