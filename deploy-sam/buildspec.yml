@@ -12,6 +12,6 @@ phases:
 
 artifacts:
   files:
-    - 'appspec.yml'
-    - 'scripts/*'
+    - './deploy-sam/appspec.yml'
+    - './deploy-sam/scripts/*'
     - 'packaged-template.yml'
