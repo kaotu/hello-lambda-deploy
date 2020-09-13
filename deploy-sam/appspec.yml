@@ -1,0 +1,14 @@
+version: 0.0
+Resources:
+  - myLambdaFunction:
+      Type: AWS::Lambda::Function
+      Properties:
+        Name: "kaotu-deploy-sam-HelloWorldFunction-1BA6Q424T9UYR"
+        CurrentVersion: "1"
+        TargetVersion: "2"
+
+Hooks:
+  - BeforeAllowTraffic: "LambdaFunctionToValidateBeforeTrafficShift"
+  - ApplicationStart:
+    - location: scripts/sam-deploy.sh
+  - AfterAllowTraffic: "LambdaFunctionToValidateAfterTrafficShift"
