@@ -14,9 +14,5 @@ phases:
 artifacts:
     files:
         - 'packaged-template.yml'
-    secondary-artifacts:
-        artifact1:
-            files:
-                - 'deploy-sam/appspec.yml'
-                - 'deploy-sam/scripts/*'
-            discard-paths: yes
+        - 'deploy-sam/appspec.yml'
+        - 'deploy-sam/scripts/*'
